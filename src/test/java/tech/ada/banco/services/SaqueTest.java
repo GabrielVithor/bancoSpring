@@ -66,7 +66,7 @@ class SaqueTest {
         assertEquals(BigDecimal.valueOf(10), conta.getSaldo(), "O saldo inicial da conta deve ser alterado para 10");
 
         try {
-            saque.executar(1, BigDecimal.ONE);
+            saque.executar(10, BigDecimal.ONE);
             fail("A conta deveria não ter sido encontrada. Por problema de conexao de banco de dados");
         } catch (RuntimeException e) {
 
