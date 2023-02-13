@@ -117,7 +117,7 @@ class SaqueControllerTest extends BaseContaTest {
 
         contaBase = obtemContaDoBanco(contaBase);
         assertEquals("6.30", response);
-        assertEquals(BigDecimal.valueOf(6.3).setScale(2, RoundingMode.HALF_UP), contaBase.getSaldo());
+        assertEquals(BigDecimal.valueOf(6.30).setScale(2, RoundingMode.HALF_UP), contaBase.getSaldo());
     }
 
     @Test
